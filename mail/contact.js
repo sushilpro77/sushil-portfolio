@@ -7,8 +7,9 @@ $(function () {
         submitSuccess: function ($form, event) {
             event.preventDefault();
             var name = $("input#name").val();
-            var email = $("input#email").val();
-            var subject = $("input#subject").val();
+            var phone = $("input#email").val();
+            var phone = $("input#phone").val();
+            var msgTitle = $("input#title").val();
             var message = $("textarea#message").val();
 
             $this = $("#sendMessageButton");
@@ -17,12 +18,14 @@ $(function () {
             $.ajax({
                 url: "contact.php",
                 type: "POST",
-                data: {
+                data: JSON.stringify({
                     name: name,
                     email: email,
-                    subject: subject,
+                    phone: phone,
+                    msgTitle: msgTitle,
                     message: message
-                },
+                }),
+                contentType: "application/json",
                 cache: false,
                 success: function () {
                     $('#success').html("<div class='alert alert-success'>");
