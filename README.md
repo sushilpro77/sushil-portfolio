@@ -11,3 +11,10 @@
     - II. Form Tweaks
 2. Next Task
 ## Jan 9
+1. Add fields to contact form as requirements
+2. Phone number validation
+3. Portfolio details added
+    - I. About Me
+    - II. Work Experience
+
+## Jan 10
