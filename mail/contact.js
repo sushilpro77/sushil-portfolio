@@ -16,7 +16,7 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "https://k14fqem8eg.execute-api.us-east-1.amazonaws.com/v1/contact-me",
                 type: "POST",
                 data: JSON.stringify({
                     name: name,
