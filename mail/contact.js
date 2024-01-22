@@ -7,7 +7,7 @@ $(function () {
         submitSuccess: function ($form, event) {
             event.preventDefault();
             var name = $("input#name").val();
-            var phone = $("input#email").val();
+            var email = $("input#email").val();
             var phone = $("input#phone").val();
             var msgTitle = $("input#title").val();
             var message = $("textarea#message").val();

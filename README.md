@@ -17,4 +17,16 @@
     - I. About Me
     - II. Work Experience
 
-## Jan 10
+## Jan 14
+1. Buy Domain from GoDaddy ( sushilportfolio.online )
+2. Created S3 Bucket as same name as domain ( made objects public) and upload projet files
+3. Creating Hosted Zones in Route 53.
+4. Managing NS for domain.
+
+## Jan 15
+1. Request certificate from ACM.
+2. Added records in Route 53.
+
+#Jan 20
+1. Managed Lamda code to save data on DynamoDB
+
