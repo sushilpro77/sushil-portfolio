@@ -13,6 +13,7 @@ $(function () {
             var message = $("textarea#message").val();
 
             $this = $("#sendMessageButton");
+            $this.text("Please Wait....");
             $this.prop("disabled", true);
 
             $.ajax({
@@ -47,6 +48,7 @@ $(function () {
                 },
                 complete: function () {
                     setTimeout(function () {
+                        $this.text("Send Message");
                         $this.prop("disabled", false);
                     }, 1000);
                 }
